@@ -5,4 +5,8 @@
     <RootNamespace>Shop_Course</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+
 </Project>
