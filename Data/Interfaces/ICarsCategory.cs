@@ -8,6 +8,6 @@ namespace Shop_Course.Data.Interfaces
 {
     interface ICarsCategory
     {
-        IEnumerable<Category> AllCategories { get; set; }
+        IEnumerable<Category> AllCategories { get; }
     }
 }
