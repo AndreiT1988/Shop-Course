@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Shop_Course.Data.Interfaces;
+using Shop_Course.Data.mocks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +27,8 @@ namespace Shop_Course
         {
             services.AddControllersWithViews();
             services.AddMvc();
+            services.AddTransient<IAllCars,MockCars>();
+            services.AddTransient<ICarsCategory, MockCategory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
