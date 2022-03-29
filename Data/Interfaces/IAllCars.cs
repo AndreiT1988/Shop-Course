@@ -8,8 +8,8 @@ namespace Shop_Course.Data.Interfaces
 {
     public interface IAllCars
     {
-        IEnumerable<Car> cars { get; set; }
-        IEnumerable<Car> getFavCars { get; set; }
+        IEnumerable<Car> Cars { get;  }
+        IEnumerable<Car> getFavCars { get; }
         Car getObjectCar(int carId);
     }
 }

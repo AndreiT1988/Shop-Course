@@ -1,26 +1,13 @@
-﻿@using Shop_Course.Models
-@model IEnumerable<Car>
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>List</title>
-</head>
-<body>
-    <h2>Все автомобили</h2>
-    @{          
-        foreach (var car in Model )
+﻿
+<h1>Все автомобили</h1>
+<h3>@Model.carrCAtegory</h3>
+@{          
+    foreach (var car in Model.allCars )
         {
         <div>
                 <h2>Модель: @car.name</h2>
                 <p>Цена: @car.price.ToString("c")</p>
         </div>
-        }
     }
-</body>
-</html>
+}
+
