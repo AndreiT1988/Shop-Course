@@ -25,7 +25,6 @@ namespace Shop_Course.Controllers
             CarsListViewModel obj = new CarsListViewModel();
             obj.allCars = _allCars.Cars;
             obj.carrCAtegory ="Автомобили";
-            //var cars = _allCars.Cars;
             return View(obj);
         }
     }
