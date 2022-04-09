@@ -17,7 +17,7 @@ namespace Shop_Course.Data.mocks
                 return new List<Category>
                 {
                     new Category{categoryName = "Электромобмлм", desc ="Современный вид транспорта" },
-                    new Category{categoryName = "Классические автомобмлм", desc = "Машины с ДВС"}
+                    new Category{categoryName = "", desc = "Машины с ДВС"}
                 };
             }
         }
